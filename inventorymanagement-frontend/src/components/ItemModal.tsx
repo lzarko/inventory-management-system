@@ -21,6 +21,13 @@ const ItemModal: React.FC<ItemModalProps> = ({ show, onClose, onSave, itemToEdit
     if (itemToEdit) {
       const { added_at, last_updated_at, ...itemWithoutDates } = itemToEdit;
       setFormData(itemWithoutDates);
+    } else {
+      setFormData({
+        id: '',
+        type: 'computer_equipment',
+        description: '',
+        state: 'in_use',
+      });
     }
   }, [itemToEdit]);
 

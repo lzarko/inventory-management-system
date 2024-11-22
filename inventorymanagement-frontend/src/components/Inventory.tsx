@@ -25,6 +25,7 @@ const Inventory: React.FC = () => {
   const handleDelete = (id: string) => {
     deleteInventoryItem(id).then(() => {
       setInventory(inventory.filter((item) => item.id !== id));
+      setItemToEdit(null); 
     });
   };
 
@@ -44,11 +45,15 @@ const Inventory: React.FC = () => {
       });
     }
     handleCloseModal();
+    setItemToEdit(null);
   };
+  
 
   return (
     <div>
-      <Button variant="primary" onClick={() => setShowModal(true)}>
+      <Button variant="primary" onClick={() => {
+        setItemToEdit(null)
+        setShowModal(true)}}>
         Add New Item
       </Button>
 
