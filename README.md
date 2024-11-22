@@ -21,15 +21,16 @@ print(secrets.token_urlsafe())
 
 
 ### Step 3: Build and Start the Docker Containers
-
+```
 docker-compose up --build
-
+```
 
 
 ### Step 4: Apply Migrations(if necessary)
-
-docker-compose exec backend python manage.py migrate
-
+```
+docker-compose exec backend python manage.py makemigrations api  # Generate migrations
+docker-compose exec backend python manage.py migrate api         # Apply migrations
+```
 
 
 ### Step 5: Run the Application
