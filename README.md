@@ -5,7 +5,7 @@ An inventory management system that lets users list, add, edit and delete invent
 
 ### Step 1: Clone the Repository
 
-Open your GIT Bash <br/> git clone [https://github.com/your-repo.git](https://github.com/lzarko/inventory-management-system.git) <br/> cd inventory-management-system
+Open your GIT Bash <br/> git clone https://github.com/lzarko/inventory-management-system.git <br/> cd inventory-management-system
 
 
 
