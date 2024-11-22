@@ -11,7 +11,12 @@ Open your GIT Bash <br/> git clone https://github.com/lzarko/inventory-managemen
 
 ### Step 2: Set Up the Environment
 
-Inside the .env file, there are placeholders which you need to populate with your database options and Django secret key
+Inside the .env file, there are placeholders which you need to populate with your database options and Django secret key <br/> For generating a secret key, what you can do is open a terminal and run 
+```
+import secrets
+print(secrets.token_urlsafe())
+```
+
 
 
 
