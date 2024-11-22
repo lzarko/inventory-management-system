@@ -23,12 +23,12 @@ docker-compose up --build
 
 
 
-###Step 4: Apply Migrations(if necessary)
+### Step 4: Apply Migrations(if necessary)
 
 docker-compose exec backend python manage.py migrate
 
 
 
-###Step 5: Run the Application
+### Step 5: Run the Application
 
 Open your favorite browser and run http://localhost:3000
